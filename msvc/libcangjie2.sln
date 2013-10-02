@@ -8,6 +8,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcangjie2", "libcangjie2\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite3", "sqlite3\sqlite3.vcxproj", "{1DF57539-EB65-485E-B70F-97DF875018C3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcangjie2_dbbuilder", "libcangjie2_dbbuilder\libcangjie2_dbbuilder.vcxproj", "{F700AB2E-7BBE-4985-803B-BF9011E45E47}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1DF57539-EB65-485E-B70F-97DF875018C3} = {1DF57539-EB65-485E-B70F-97DF875018C3}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -22,6 +27,10 @@ Global
 		{1DF57539-EB65-485E-B70F-97DF875018C3}.Debug|Win32.Build.0 = Debug|Win32
 		{1DF57539-EB65-485E-B70F-97DF875018C3}.Release|Win32.ActiveCfg = Release|Win32
 		{1DF57539-EB65-485E-B70F-97DF875018C3}.Release|Win32.Build.0 = Release|Win32
+		{F700AB2E-7BBE-4985-803B-BF9011E45E47}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F700AB2E-7BBE-4985-803B-BF9011E45E47}.Debug|Win32.Build.0 = Debug|Win32
+		{F700AB2E-7BBE-4985-803B-BF9011E45E47}.Release|Win32.ActiveCfg = Release|Win32
+		{F700AB2E-7BBE-4985-803B-BF9011E45E47}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
