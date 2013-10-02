@@ -18,6 +18,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcangjie2_cli", "libcangj
 		{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6} = {5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcangjie2_bench", "libcangjie2_bench\libcangjie2_bench.vcxproj", "{6E5E5DAD-4CAF-40A0-9BF9-841C8721B528}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6} = {5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -40,6 +45,10 @@ Global
 		{D7DD0126-0167-4A9E-8947-06654138EF65}.Debug|Win32.Build.0 = Debug|Win32
 		{D7DD0126-0167-4A9E-8947-06654138EF65}.Release|Win32.ActiveCfg = Release|Win32
 		{D7DD0126-0167-4A9E-8947-06654138EF65}.Release|Win32.Build.0 = Release|Win32
+		{6E5E5DAD-4CAF-40A0-9BF9-841C8721B528}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6E5E5DAD-4CAF-40A0-9BF9-841C8721B528}.Debug|Win32.Build.0 = Debug|Win32
+		{6E5E5DAD-4CAF-40A0-9BF9-841C8721B528}.Release|Win32.ActiveCfg = Release|Win32
+		{6E5E5DAD-4CAF-40A0-9BF9-841C8721B528}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
