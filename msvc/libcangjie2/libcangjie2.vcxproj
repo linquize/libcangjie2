@@ -10,6 +10,17 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\cangjie.c" />
+    <ClCompile Include="..\..\src\cangjiechar.c" />
+    <ClCompile Include="..\..\src\cangjiecharlist.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\cangjie.h" />
+    <ClInclude Include="..\..\src\cangjiechar.h" />
+    <ClInclude Include="..\..\src\cangjiecharlist.h" />
+    <ClInclude Include="..\..\src\cangjieerrors.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -46,7 +57,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;CANGJIE_DB="..\\..\\data\\cangjie.db";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)sqlite3</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
@@ -64,7 +75,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;CANGJIE_DB="..\\..\\data\\cangjie.db";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(SolutionDir)sqlite3</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
