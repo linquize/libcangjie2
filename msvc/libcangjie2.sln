@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcangjie2", "libcangjie2\libcangjie2.vcxproj", "{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite3", "sqlite3\sqlite3.vcxproj", "{1DF57539-EB65-485E-B70F-97DF875018C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,6 +15,10 @@ Global
 		{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}.Debug|Win32.Build.0 = Debug|Win32
 		{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}.Release|Win32.ActiveCfg = Release|Win32
 		{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}.Release|Win32.Build.0 = Release|Win32
+		{1DF57539-EB65-485E-B70F-97DF875018C3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1DF57539-EB65-485E-B70F-97DF875018C3}.Debug|Win32.Build.0 = Debug|Win32
+		{1DF57539-EB65-485E-B70F-97DF875018C3}.Release|Win32.ActiveCfg = Release|Win32
+		{1DF57539-EB65-485E-B70F-97DF875018C3}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
