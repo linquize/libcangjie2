@@ -35,3 +35,13 @@ bin
 
 # -- Temp editor files ---------------
 *.swp
+
+# -- Visual Studio files -------------
+*.suo
+*.sdf
+*.opensdf
+*.user
+obj
+x64
+Debug
+Release
