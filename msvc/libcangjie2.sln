@@ -33,6 +33,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_cangjiechar", "test_ca
 		{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6} = {5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_cangjiecharlist", "test_cangjiecharlist\test_cangjiecharlist.vcxproj", "{C48A0AD5-CB0B-464F-8520-B43273CDC987}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6} = {5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -67,6 +72,10 @@ Global
 		{2804DE66-8DFD-4010-B7E6-EFEFBDAAFB83}.Debug|Win32.Build.0 = Debug|Win32
 		{2804DE66-8DFD-4010-B7E6-EFEFBDAAFB83}.Release|Win32.ActiveCfg = Release|Win32
 		{2804DE66-8DFD-4010-B7E6-EFEFBDAAFB83}.Release|Win32.Build.0 = Release|Win32
+		{C48A0AD5-CB0B-464F-8520-B43273CDC987}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C48A0AD5-CB0B-464F-8520-B43273CDC987}.Debug|Win32.Build.0 = Debug|Win32
+		{C48A0AD5-CB0B-464F-8520-B43273CDC987}.Release|Win32.ActiveCfg = Release|Win32
+		{C48A0AD5-CB0B-464F-8520-B43273CDC987}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
