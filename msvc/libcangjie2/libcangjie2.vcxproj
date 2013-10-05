@@ -19,6 +19,7 @@
     <ClInclude Include="..\..\src\cangjie.h" />
     <ClInclude Include="..\..\src\cangjiechar.h" />
     <ClInclude Include="..\..\src\cangjiecharlist.h" />
+    <ClInclude Include="..\..\src\cangjiecommon.h" />
     <ClInclude Include="..\..\src\cangjieerrors.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
