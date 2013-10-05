@@ -38,6 +38,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_cangjiecharlist", "tes
 		{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6} = {5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcangjie_derivative_dll", "libcangjie_derivative_dll\libcangjie_derivative_dll.vcxproj", "{62D346B0-20B3-4307-BAE8-ED7891E5DD55}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5C9F2C87-FD37-4BCE-814B-C95C44E53AF6} = {5C9F2C87-FD37-4BCE-814B-C95C44E53AF6}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -76,6 +81,10 @@ Global
 		{C48A0AD5-CB0B-464F-8520-B43273CDC987}.Debug|Win32.Build.0 = Debug|Win32
 		{C48A0AD5-CB0B-464F-8520-B43273CDC987}.Release|Win32.ActiveCfg = Release|Win32
 		{C48A0AD5-CB0B-464F-8520-B43273CDC987}.Release|Win32.Build.0 = Release|Win32
+		{62D346B0-20B3-4307-BAE8-ED7891E5DD55}.Debug|Win32.ActiveCfg = Debug|Win32
+		{62D346B0-20B3-4307-BAE8-ED7891E5DD55}.Debug|Win32.Build.0 = Debug|Win32
+		{62D346B0-20B3-4307-BAE8-ED7891E5DD55}.Release|Win32.ActiveCfg = Release|Win32
+		{62D346B0-20B3-4307-BAE8-ED7891E5DD55}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
