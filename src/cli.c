@@ -1,7 +1,11 @@
 #include <getopt.h>
 #include <stdio.h>
 #include <string.h>
+#ifndef _WIN32
 #include <libgen.h>
+#else
+#include <ctype.h>
+#endif
 
 #include <cangjie.h>
 
@@ -13,6 +17,23 @@ typedef enum CangjieCliMode {
     CANGJIE_CLI_MODE_RADICAL   = 2,
 } CangjieCliMode;
 
+#ifdef _WIN32
+#define has_dos_drive_prefix(path) (isalpha(*(path)) && (path)[1] == ':')
+#define is_dir_sep(c) ((c) == '/' || (c) == '\\')
+/* Adapted from libiberty's basename.c.  */
+char *basename(char *path)
+{
+	const char *base;
+	/* Skip over the disk name in MSDOS pathnames. */
+	if (has_dos_drive_prefix(path))
+		path += 2;
+	for (base = path; *path; path++) {
+		if (is_dir_sep(*path))
+			base = path + 1;
+	}
+	return (char *)base;
+}
+#endif
 
 int usage(const char *progname) {
     printf("Usage: %s [OPTIONS]... CODE\n", basename(progname));
