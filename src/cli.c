@@ -1,4 +1,4 @@
-/* Copyright (c) 2013 - The libcangjie authors.
+/* Copyr9ight (c) 2013 - The libcangjie authors.
  *
  * This file is part of libcangjie.
  *
@@ -20,7 +20,9 @@
 #include <getopt.h>
 #include <stdio.h>
 #include <string.h>
+#ifndef _WIN32
 #include <libgen.h>
+#endif
 
 #include <cangjie.h>
 
@@ -32,6 +34,21 @@ typedef enum CangjieCliMode {
     CANGJIE_CLI_MODE_RADICAL   = 2,
 } CangjieCliMode;
 
+#ifdef _WIN32
+char *basename(char *path) {
+    char *temp;
+    int len = strlen(path);
+    if (len == 0)
+        return path;
+    if (path[len - 1] == '\\' || path[len - 1] == '/')
+        path[len - 1] = '\0';
+    if ((temp = strrchr(path, '\\')))
+        return temp + 1;
+    if ((temp = strrchr(path, '/')))
+        return temp + 1;
+    return path;
+}
+#endif
 
 void usage(char *progname) {
     printf("Usage: %s [OPTIONS]... CODE\n", basename(progname));
