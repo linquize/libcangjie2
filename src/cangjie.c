@@ -1,19 +1,19 @@
-﻿/* Copyright (c) 2013 - The libcangjie2 authors.
+﻿/* Copyright (c) 2013 - The libcangjie authors.
  *
- * This file is part of libcangjie2.
+ * This file is part of libcangjie.
  *
- * libcangjie2 is free software: you can redistribute it and/or modify
+ * libcangjie is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * libcangjie2 is distributed in the hope that it will be useful,
+ * libcangjie is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public License
- * along with libcangjie2.  If not, see <http://www.gnu.org/licenses/>.
+ * along with libcangjie.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 
@@ -294,7 +294,14 @@ int cangjie_get_characters(Cangjie          *cj,
 
             CangjieChar *c;
             int ret = cangjie_char_new(&c, chchar, code, frequency);
+            if (ret != CANGJIE_OK) {
+                return ret;
+            }
+
             ret = cangjie_char_list_prepend(&tmp, c);
+            if (ret != CANGJIE_OK) {
+                return ret;
+            }
         } else if(ret == SQLITE_DONE) {
             // All rows finished
             sqlite3_finalize(stmt);
@@ -349,7 +356,14 @@ int cangjie_get_characters_by_shortcode(Cangjie          *cj,
 
             CangjieChar *c;
             int ret = cangjie_char_new(&c, chchar, input_code, frequency);
+            if (ret != CANGJIE_OK) {
+                return ret;
+            }
+
             ret = cangjie_char_list_prepend(&tmp, c);
+            if (ret != CANGJIE_OK) {
+                return ret;
+            }
         } else if(ret == SQLITE_DONE) {
             // All rows finished
             sqlite3_finalize(stmt);
